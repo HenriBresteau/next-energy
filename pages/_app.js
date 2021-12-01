@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import { ChakraProvider } from "@chakra-ui/react";
+import Main from "../Component/Layouts/main";
+import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function Website({ Component, pageProps, router }) {
+  return (
+    <ChakraProvider>
+      <Main>
+        <Component {...pageProps} />
+      </Main>
+    </ChakraProvider>
+  );
 }
 
-export default MyApp
+export default Website;
