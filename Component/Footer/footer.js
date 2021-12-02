@@ -2,10 +2,12 @@ import styles from "./footer.module.scss";
 import Image from "next/image";
 import logoNext from "../../public/images/logo/LOGO-GENERIQUE.svg";
 import { Text } from "@chakra-ui/layout";
+import { Form } from "../Form/form";
 
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <Form />
       <Image
         src={logoNext}
         alt="logo Next Energy"
