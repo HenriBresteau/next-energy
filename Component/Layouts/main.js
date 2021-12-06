@@ -4,7 +4,7 @@ import { Footer } from "../Footer/footer";
 import Navbar from "../Navbar/Navbar";
 import styles from "./main.module.scss";
 
-export default function Main({ children }) {
+export default function Main({ children, router }) {
   return (
     <Box as="main">
       <Head>
@@ -19,7 +19,7 @@ export default function Main({ children }) {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <title>Next Energy - Expert en optimisation énergétique </title>
       </Head>
-      <Navbar />
+      <Navbar path={router.asPath} />
       <Container className={styles.main} pt={14} pb={8} maxW="container.md">
         {children}
       </Container>

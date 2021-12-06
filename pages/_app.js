@@ -6,7 +6,7 @@ import "../styles/globals.css";
 function Website({ Component, pageProps, router }) {
   return (
     <ChakraProvider theme={theme}>
-      <Main>
+      <Main router={router}>
         <Component {...pageProps} />
       </Main>
     </ChakraProvider>
