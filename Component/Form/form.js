@@ -45,7 +45,7 @@ export const Form = () => {
     <>
       <Box p={4}>
         <Heading as="h3" mx="4" fontSize="20" color="#0b0e3F">
-          Testez votre éligibilité
+          Vous souhaitez être contacté ?
         </Heading>
         <Box m={4} color="#0b0e3F">
           <VStack spacing={4} as="form" method="POST" onSubmit={submitContact}>
@@ -120,7 +120,6 @@ export const Form = () => {
             </FormControl>
           </VStack>
         </Box>
-        <Divider />
       </Box>
     </>
   );
