@@ -7,7 +7,7 @@ function Website({ Component, pageProps, router }) {
   return (
     <ChakraProvider theme={theme}>
       <Main router={router}>
-        <Component {...pageProps} />
+        <Component {...pageProps} key={router.route} />
       </Main>
     </ChakraProvider>
   );
