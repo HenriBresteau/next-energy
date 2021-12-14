@@ -34,7 +34,7 @@ import NemuroVert from "../../public/images/logo/numero-vert.svg";
 export const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
   return (
-    <Box as="nav" className={styles.nav}>
+    <Container as="nav" className={styles.nav} maxW="container.xl">
       <Flex
         bg={"white"}
         minH={"60px"}
@@ -42,6 +42,7 @@ export const Navbar = () => {
         px={{ base: 4 }}
         align={"center"}
         flexDirection="column"
+        maxW="container.xl"
       >
         <Flex
           flexDirection={{ base: "column", md: "row" }}
@@ -73,10 +74,12 @@ export const Navbar = () => {
         <Stack
           direction={{ base: "column", md: "row" }}
           display={{ base: "none", md: "flex" }}
-          width={{ base: "full", md: "auto" }}
+          width={{ base: "full", md: "100%" }}
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
+          px={{ md: 2 }}
+          spacing={{ md: 6 }}
         >
           {navItems.map((navItem) => (
             <Box key={navItem.label}>
@@ -146,7 +149,7 @@ export const Navbar = () => {
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
-    </Box>
+    </Container>
   );
 };
 export default Navbar;
