@@ -3,9 +3,9 @@ import Layout from "../../Component/Layouts/articles";
 import { Title } from "../../Component/Solutions/solutions";
 
 const Solution = () => (
-  <Layout title="Calorifugeage">
+  <Layout title="Points Singuliers">
     <Container>
-      <Title>Calorifugeage</Title>
+      <Title>Points Singuliers</Title>
     </Container>
   </Layout>
 );
