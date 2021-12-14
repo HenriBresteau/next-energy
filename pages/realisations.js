@@ -1,17 +1,17 @@
 import { Box, Text, Container, Heading } from "@chakra-ui/react";
 import Layout from "../Component/Layouts/articles";
 
-export default function CEE() {
+export default function Realisations() {
   return (
-    <Layout title="CEE">
+    <Layout title="Réalisations">
       <Container maxW="container.xl">
         <Box>
           <Heading as="h2" variant="section-title">
-            Certificat d&apos;économie d&apos;énergie
+            Réalisations
           </Heading>
           <Box>
             <Heading as="h3" pb={4}>
-              En savoir plus sur les CEE :
+              Découvrez nos dernières interventions :
             </Heading>
             <Text pb={2}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -24,17 +24,6 @@ export default function CEE() {
               pellentesque. Pellentesque sed eleifend tellus, quis laoreet nunc.
               Mauris semper odio ut tortor lobortis semper id at ligula. Sed
               vitae vehicula felis.
-            </Text>
-            <Text pb={2}>
-              Suspendisse in arcu felis. Vivamus ultricies a nibh et tempus.
-              Etiam at velit elit. Vestibulum porta tellus vitae ipsum
-              scelerisque, sed porta nibh mattis. Nam semper mattis justo, sit
-              amet condimentum felis rhoncus quis. Phasellus fringilla in dui
-              dictum mollis. Nullam eget efficitur felis, nec posuere nibh.
-              Nulla vel sapien pulvinar, accumsan leo eu, scelerisque enim. Nunc
-              venenatis blandit purus in venenatis. Nam nec placerat dolor. Sed
-              maximus nibh nec eros sagittis, et ullamcorper velit eleifend.
-              Suspendisse commodo rhoncus luctus.
             </Text>
           </Box>
         </Box>

@@ -4,7 +4,7 @@ import Layout from "../Component/Layouts/articles";
 export default function References() {
   return (
     <Layout title="Références">
-      <Container>
+      <Container maxW="container.xl">
         <Box>
           <Heading as="h2" variant="section-title">
             Références

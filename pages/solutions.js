@@ -4,7 +4,7 @@ import Section from "../Component/Layouts/section";
 
 const Solutions = () => (
   <Layout title="solutions">
-    <Container>
+    <Container maxW="container.xl">
       <Heading as="h3" fontSize={20} mb={4}>
         Nos solutions
       </Heading>

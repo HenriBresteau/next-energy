@@ -14,7 +14,7 @@ import Layout from "../Component/Layouts/articles";
 export default function Contact() {
   return (
     <Layout>
-      <Container>
+      <Container maxW="container.xl">
         <Box>
           <Heading as="h2" variant="section-title">
             Contact
@@ -69,7 +69,7 @@ export default function Contact() {
               }}
               leftIcon={<IoMailOutline color="#74bd4c" size="18px" />}
             >
-              <a href="maito:contact@next-energy.fr">contact@next-energy.fr</a>
+              <a href="mailto:contact@next-energy.fr">contact@next-energy.fr</a>
             </Button>
           </VStack>
         </Box>

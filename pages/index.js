@@ -4,7 +4,7 @@ import Layout from "../Component/Layouts/articles";
 export default function Home() {
   return (
     <Layout>
-      <Container>
+      <Container maxW="container.xl">
         <Heading as="h1" textTransform="uppercase">
           Next Energy, Partenaire de vos projets énergétiques
         </Heading>

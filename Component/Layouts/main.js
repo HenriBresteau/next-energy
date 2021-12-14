@@ -20,7 +20,12 @@ export default function Main({ children, router }) {
         <title>Next Energy - Expert en optimisation énergétique </title>
       </Head>
       <Navbar path={router.asPath} />
-      <Container className={styles.main} pt={14} pb={8} maxW="container.md">
+      <Container
+        className={styles.main}
+        pt={{ base: "200px", md: "120px" }}
+        pb={8}
+        maxW="container.xl"
+      >
         {children}
       </Container>
       <Footer />

@@ -4,9 +4,8 @@ import { TitleVE } from "../../Component/Vous-etes/vous-etes";
 
 const VousEtes = () => (
   <Layout title="Collectivité">
-    <Container>
+    <Container maxW="container.xl">
       <TitleVE>Collectivité</TitleVE>
-      
     </Container>
   </Layout>
 );

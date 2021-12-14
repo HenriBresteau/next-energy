@@ -4,7 +4,7 @@ import { Title } from "../../Component/Solutions/solutions";
 
 const Solution = () => (
   <Layout title="Calorifugeage">
-    <Container>
+    <Container maxW="container.xl">
       <Title>Calorifugeage</Title>
     </Container>
   </Layout>

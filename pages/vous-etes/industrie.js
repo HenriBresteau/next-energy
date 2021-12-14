@@ -4,7 +4,7 @@ import { TitleVE } from "../../Component/Vous-etes/vous-etes";
 
 const VousEtes = () => (
   <Layout title="Industrie">
-    <Container>
+    <Container maxW="container.xl">
       <TitleVE>Industrie</TitleVE>
     </Container>
   </Layout>
