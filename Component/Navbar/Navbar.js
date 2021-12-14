@@ -12,7 +12,6 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
-  Portal,
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -30,6 +29,7 @@ import styles from "./navbar.module.scss";
 import Image from "next/image";
 import NextLink from "next/link";
 import NextLogo from "../../public/images/logo/LOGO-GENERIQUE.svg";
+import NemuroVert from "../../public/images/logo/numero-vert.svg";
 
 export const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -40,18 +40,35 @@ export const Navbar = () => {
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
-        borderBottom={1}
-        borderStyle={"solid"}
-        borderColor={"#74bd4c"}
         align={"center"}
+        flexDirection="column"
       >
-        <Box mr={5} pt={2}>
-          <NextLink href="/">
-            <a>
-              <Image src={NextLogo} alt="logo next" width={300} height={64} />
-            </a>
-          </NextLink>
-        </Box>
+        <Flex
+          flexDirection={{ base: "column", md: "row" }}
+          width={{ base: "auto", md: "full" }}
+          justifyContent="space-between"
+          flexGrow={1}
+        >
+          <Box mr={5} pt={2}>
+            <NextLink href="/">
+              <a>
+                <Image src={NextLogo} alt="logo next" width={300} height={64} />
+              </a>
+            </NextLink>
+          </Box>
+          <Box mr={5} pt={2}>
+            <NextLink href="tel:0805037555">
+              <a>
+                <Image
+                  src={NemuroVert}
+                  alt="numero vert"
+                  width={300}
+                  height={64}
+                />
+              </a>
+            </NextLink>
+          </Box>
+        </Flex>
 
         <Stack
           direction={{ base: "column", md: "row" }}
@@ -69,6 +86,7 @@ export const Navbar = () => {
                     <PopoverTrigger>
                       <Link
                         p={2}
+                        color="next"
                         _hover={{
                           textDecoration: "none",
                           color: "#8dc449",
@@ -95,6 +113,7 @@ export const Navbar = () => {
               ) : (
                 <NextLink href={navItem.href} passHref>
                   <Link
+                    color="next"
                     p={2}
                     _hover={{
                       textDecoration: "none",
@@ -132,10 +151,6 @@ export const Navbar = () => {
 };
 export default Navbar;
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
-  const popoverContentBgColor = useColorModeValue("white", "gray.800");
-
   return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
@@ -147,10 +162,10 @@ const DesktopNav = () => {
                 href={navItem.href ?? "#"}
                 fontSize={"sm"}
                 fontWeight={500}
-                color={linkColor}
+                color="next"
                 _hover={{
                   textDecoration: "none",
-                  color: linkHoverColor,
+                  color: "gray.800",
                 }}
               >
                 {navItem.label}
@@ -161,7 +176,7 @@ const DesktopNav = () => {
               <PopoverContent
                 border={0}
                 boxShadow={"xl"}
-                bg={popoverContentBgColor}
+                bg="white"
                 p={4}
                 rounded={"xl"}
                 minW={"sm"}
@@ -273,7 +288,7 @@ const MobileNavItem = ({ label, children, href }) => {
           href={href}
           passHref
           fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
+          color={useColorModeValue("next", "gray.200")}
         >
           {label}
         </NextLink>
@@ -322,10 +337,6 @@ const navItems = [
         label: "Points Singuliers",
         href: "/solution/points-singuliers",
       },
-      {
-        label: "Pompes à chaleur",
-        href: "/solution/pompes-a-chaleur",
-      },
     ],
   },
   {
@@ -346,6 +357,7 @@ const navItems = [
       },
     ],
   },
+  { label: "Réalisations", href: "/realisations" },
   { label: "Références", href: "/references" },
   { label: "Contact", href: "/contact" },
 ];
