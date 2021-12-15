@@ -19,8 +19,8 @@ export default function CEE() {
         <Box>
           <Heading as="h2" variant="section-CEE">
             Les <SpanCeeTitle>C</SpanCeeTitle>ertificats d&apos;
-            <SpanCeeTitle>é</SpanCeeTitle>conomies d&apos;
-            <SpanCeeTitle>é</SpanCeeTitle>nergies
+            <SpanCeeTitle>e</SpanCeeTitle>conomies d&apos;
+            <SpanCeeTitle>e</SpanCeeTitle>nergies
           </Heading>
           <Stack
             direction={{ base: "column", md: "row" }}
