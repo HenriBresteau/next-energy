@@ -353,6 +353,10 @@ const navItems = [
         label: "Industrie",
         href: "/vous-etes/industrie",
       },
+      {
+        label: "Bailleurs Sociaux",
+        href: "/vous-etes/bailleurs-sociaux",
+      },
     ],
   },
   { label: "Réalisations", href: "/realisations" },
