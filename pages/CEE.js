@@ -22,13 +22,11 @@ export default function CEE() {
           </Heading>
           <Stack
             direction={{ base: "column", md: "row" }}
-            display={{ base: "flex", md: "flex" }}
-            width={{ base: "full", md: "100%" }}
+            display="flex"
             alignItems="center"
-            mt={{ base: 4, md: 0 }}
-            px={{ md: 2 }}
+            mt={{ md: "2rem" }}
           >
-            <Box flex="0.8">
+            <Box flex="0.8" maxW={{ md: "600px" }} mr={{ md: "50px" }}>
               <Heading as="h3" pb={4} variant="section-sub">
                 Qu’est-ce que c’est ?
               </Heading>
@@ -57,8 +55,8 @@ export default function CEE() {
                 associatifs.
               </Text>
             </Box>
-            <Spacer flex="0.2" />
-            <Box flex="0.5">
+
+            <Box flex="0.5" mx={{ md: "100px !important" }}>
               <Image
                 src={Pollueur}
                 alt="Les Certificats d'économies d'énergies - les pollueurs"
@@ -71,7 +69,7 @@ export default function CEE() {
                 Une procédure en 4 étapes :
               </Heading>
               <HStack>
-                <Text fontSize={46} color="#61727B" fontWeight="800">
+                <Text fontSize={48} color="#61727B85" fontWeight="800">
                   1
                 </Text>
                 <Text fontSize={16}>
@@ -82,7 +80,7 @@ export default function CEE() {
                 </Text>
               </HStack>
               <HStack>
-                <Text fontSize={46} color="#61727B" fontWeight="800">
+                <Text fontSize={48} color="#61727B85" fontWeight="800">
                   2
                 </Text>
                 <Text fontSize={16}>
@@ -94,7 +92,7 @@ export default function CEE() {
                 </Text>
               </HStack>
               <HStack>
-                <Text fontSize={46} color="#61727B" fontWeight="800">
+                <Text fontSize={48} color="#61727B85" fontWeight="800">
                   3
                 </Text>
                 <Text fontSize={16}>
@@ -104,7 +102,7 @@ export default function CEE() {
                 </Text>
               </HStack>
               <HStack>
-                <Text fontSize={46} color="#61727B" fontWeight="800">
+                <Text fontSize={48} color="#61727B85" fontWeight="800">
                   4
                 </Text>
                 <Text fontSize={16}>
