@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Layout from "../Component/Layouts/articles";
-import SpanCee from "../Component/Vous-etes/cee";
+import { SpanCee, SpanCeeTitle } from "../Component/Vous-etes/cee";
 import Pollueur from "../public/images/CEE/Pollueur.png";
 
 export default function CEE() {
@@ -17,8 +17,10 @@ export default function CEE() {
     <Layout title="CEE">
       <Container maxW="container.xl">
         <Box>
-          <Heading as="h2" variant="section-title">
-            Les Certificats d&apos;économies d&apos;énergies
+          <Heading as="h2" variant="section-CEE">
+            Les <SpanCeeTitle>C</SpanCeeTitle>ertificats d&apos;
+            <SpanCeeTitle>é</SpanCeeTitle>conomies d&apos;
+            <SpanCeeTitle>é</SpanCeeTitle>nergies
           </Heading>
           <Stack
             direction={{ base: "column", md: "row" }}
@@ -56,7 +58,7 @@ export default function CEE() {
               </Text>
             </Box>
 
-            <Box flex="0.5" mx={{ md: "100px !important" }}>
+            <Box flex="0.4" mx={{ md: "120px !important" }}>
               <Image
                 src={Pollueur}
                 alt="Les Certificats d'économies d'énergies - les pollueurs"
@@ -68,22 +70,22 @@ export default function CEE() {
               <Heading as="h3" pb={4} variant="section-sub">
                 Une procédure en 4 étapes :
               </Heading>
-              <HStack>
+              <HStack pb={{ base: 6, md: 0 }}>
                 <Text fontSize={48} color="#61727B85" fontWeight="800">
                   1
                 </Text>
-                <Text fontSize={16}>
+                <Text>
                   Faire une demande de <SpanCee>CEE</SpanCee> avant les travaux
                   auprès des obligés <br />
                   (fournisseurs d’énergie comme Total, EDF, mais aussi grandes
                   enseignes de distribution (Auchan, Leclerc…))
                 </Text>
               </HStack>
-              <HStack>
+              <HStack pb={{ base: 6, md: 0 }}>
                 <Text fontSize={48} color="#61727B85" fontWeight="800">
                   2
                 </Text>
-                <Text fontSize={16}>
+                <Text>
                   Faire réaliser les travaux par un professionnel ayant la
                   qualification RGE. Soucieux de la qualité de ses prestations,{" "}
                   <br />
@@ -91,21 +93,21 @@ export default function CEE() {
                   Garant de l’Environnement (RGE).
                 </Text>
               </HStack>
-              <HStack>
+              <HStack pb={{ base: 6, md: 0 }}>
                 <Text fontSize={48} color="#61727B85" fontWeight="800">
                   3
                 </Text>
-                <Text fontSize={16}>
+                <Text>
                   Vérifier que vos équipements sont bien éligibles. <br />
                   Les <SpanCee>CEE</SpanCee> s’appliquent pour tous les travaux
                   d’isolation intérieure et extérieure.
                 </Text>
               </HStack>
-              <HStack>
+              <HStack pb={{ base: 6, md: 0 }}>
                 <Text fontSize={48} color="#61727B85" fontWeight="800">
                   4
                 </Text>
-                <Text fontSize={16}>
+                <Text>
                   Après les travaux, il vous suffira d’envoyer la preuve de
                   réalisation des travaux à l’acheteur <br /> des{" "}
                   <SpanCee>CEE</SpanCee> et d’attendre la validation de votre
