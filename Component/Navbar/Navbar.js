@@ -18,6 +18,7 @@ import {
   useColorModeValue,
   useDisclosure,
   Collapse,
+  Divider,
 } from "@chakra-ui/react";
 import {
   ChevronDownIcon,
@@ -70,15 +71,14 @@ export const Navbar = () => {
             </NextLink>
           </Box>
         </Flex>
-
+        <Divider />
         <Stack
           direction={{ base: "column", md: "row" }}
           display={{ base: "none", md: "flex" }}
           width={{ base: "full", md: "100%" }}
           alignItems="center"
           flexGrow={1}
-          mt={{ base: 4, md: 0 }}
-          px={{ md: 2 }}
+          mt={{ base: 4, md: 4 }}
           spacing={{ md: 6 }}
         >
           {navItems.map((navItem) => (
@@ -205,13 +205,13 @@ const DesktopSubNav = ({ label, href }) => {
         display={"block"}
         p={2}
         rounded={"md"}
-        _hover={{ bg: useColorModeValue("green.50", "gray.900") }}
+        _hover={{ bg: "#1AB10750" }}
       >
         <Stack direction={"row"} align={"center"}>
           <Box>
             <Text
               transition={"all .3s ease"}
-              _groupHover={{ color: "green.400" }}
+              _groupHover={{ color: "gray.800" }}
               fontWeight={500}
             >
               {label}
@@ -226,7 +226,7 @@ const DesktopSubNav = ({ label, href }) => {
             align={"center"}
             flex={1}
           >
-            <Icon color={"green.400"} w={5} h={5} as={ChevronRightIcon} />
+            <Icon color={"gray.800"} w={5} h={5} as={ChevronRightIcon} />
           </Flex>
         </Stack>
       </Link>
@@ -291,7 +291,7 @@ const MobileNavItem = ({ label, children, href }) => {
           href={href}
           passHref
           fontWeight={600}
-          color={useColorModeValue("next", "gray.200")}
+          color={("next")}
         >
           {label}
         </NextLink>
