@@ -92,7 +92,7 @@ export const Navbar = () => {
                         color="next"
                         _hover={{
                           textDecoration: "none",
-                          color: "#8dc449",
+                          color: "#61727B",
                         }}
                       >
                         {navItem.label}
@@ -120,7 +120,7 @@ export const Navbar = () => {
                     p={2}
                     _hover={{
                       textDecoration: "none",
-                      color: "#8dc449",
+                      color: "#61727B",
                     }}
                   >
                     {navItem.label}
@@ -287,12 +287,7 @@ const MobileNavItem = ({ label, children, href }) => {
   return (
     <Stack spacing={4} onClick={children && onToggle}>
       <Flex py={2} justify={"space-between"} align={"center"}>
-        <NextLink
-          href={href}
-          passHref
-          fontWeight={600}
-          color={("next")}
-        >
+        <NextLink href={href} passHref fontWeight={600} color={"next"}>
           {label}
         </NextLink>
         {children && (
