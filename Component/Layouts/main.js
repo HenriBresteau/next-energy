@@ -22,7 +22,7 @@ export default function Main({ children, router }) {
       <Navbar path={router.asPath} />
       <Container
         className={styles.main}
-        pt={{ base: "200px", md: "140px" }}
+        pt={{ base: "220px", md: "160px" }}
         pb={8}
         maxW="container.xl"
       >
