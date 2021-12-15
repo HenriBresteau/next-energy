@@ -1,12 +1,4 @@
-import {
-  Box,
-  Text,
-  Container,
-  Heading,
-  Stack,
-  Spacer,
-  HStack,
-} from "@chakra-ui/react";
+import { Box, Text, Container, Heading, Stack, HStack } from "@chakra-ui/react";
 import Image from "next/image";
 import Layout from "../Component/Layouts/articles";
 import { SpanCee, SpanCeeTitle } from "../Component/Vous-etes/cee";
