@@ -14,3 +14,24 @@ a {
 * {
   box-sizing: border-box;
 }
+ @font-face {
+  font-family: 'Helvetica Roman';
+  src:       url('/fonts/HelveticaNeueLTStd-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Heavy';
+  src: url('/fonts/HelveticaNeueLTStd-Hv.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Bold';
+  src: url('/fonts/HelveticaNeueLTStd-Bd.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
