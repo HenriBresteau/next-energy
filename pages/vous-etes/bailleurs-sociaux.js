@@ -77,25 +77,27 @@ const VousEtes = () => (
         <Heading as="h3" pb={4} variant="section-sub-gris">
           Générez de réelles économies et valorisez votre parc
         </Heading>
-        <Text pb={4}>Les travaux d’efficacité énergétique :</Text>
-        <UnorderedList color={"next"} fontWeight="600" pb={6}>
-          <ListItem>
-            Le calorifugeage des réseaux d’eau chaude sanitaire et de chauffage
-            =&gt; jusqu’à 25 % d’économies.
-          </ListItem>
-          <ListItem>
-            L’isolation des combles et des planchers-bas =&gt;jusqu’à 30 %
-            d’économies.
-          </ListItem>
-          <ListItem>
-            L’isolation des planchers-bas =&gt; jusqu’à 10 % d’économies.
-          </ListItem>
-          <ListItem>
-            L’isolation des points singuliers de vos canalisations Vous
-            permettent de générer des baisses de charges, d’améliorer le confort
-            des habitants et de valoriser votre patrimoine immobilier.
-          </ListItem>
-        </UnorderedList>
+        <Text pb={4}>
+          Les travaux d’efficacité énergétique :
+          <UnorderedList color={"next"} fontWeight="600" pb={6}>
+            <ListItem>
+              Le calorifugeage des réseaux d’eau chaude sanitaire et de
+              chauffage =&gt; jusqu’à 25 % d’économies.
+            </ListItem>
+            <ListItem>
+              L’isolation des combles et des planchers-bas =&gt;jusqu’à 30 %
+              d’économies.
+            </ListItem>
+            <ListItem>
+              L’isolation des planchers-bas =&gt; jusqu’à 10 % d’économies.
+            </ListItem>
+            <ListItem>
+              L’isolation des points singuliers de vos canalisations Vous
+              permettent de générer des baisses de charges, d’améliorer le
+              confort des habitants et de valoriser votre patrimoine immobilier.
+            </ListItem>
+          </UnorderedList>
+        </Text>
         <Text pb={6}>
           Les offices publics de l’habitat (OPH), les sociétés anonymes
           d’habitations à loyers modérés ou HLM (SA d’HLM), les sociétés
