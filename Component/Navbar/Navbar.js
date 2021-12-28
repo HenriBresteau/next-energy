@@ -1,17 +1,12 @@
 import {
   Container,
   Flex,
-  Heading,
   Text,
   IconButton,
   Stack,
   Box,
-  Menu,
   Link,
   Icon,
-  MenuButton,
-  MenuItem,
-  MenuList,
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -20,12 +15,7 @@ import {
   Collapse,
   Divider,
 } from "@chakra-ui/react";
-import {
-  ChevronDownIcon,
-  ChevronRightIcon,
-  CloseIcon,
-  HamburgerIcon,
-} from "@chakra-ui/icons";
+import { ChevronDownIcon, CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import styles from "./navbar.module.scss";
 import Image from "next/image";
 import NextLink from "next/link";
@@ -35,12 +25,16 @@ import NemuroVert from "../../public/images/logo/numero-vert.svg";
 export const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
   return (
-    <Container as="nav" className={styles.nav} maxW="container.xl">
+    <Container
+      as="nav"
+      className={styles.nav}
+      maxW="container.xl"
+      px={{ base: 0 }}
+    >
       <Flex
         bg={"white"}
-        minH={"60px"}
-        py={{ base: 2 }}
-        px={{ base: 4 }}
+        minH={"70px"}
+        py={{ base: 2, md: 4 }}
         align={"center"}
         flexDirection="column"
         maxW="container.xl"
@@ -51,14 +45,14 @@ export const Navbar = () => {
           justifyContent="space-between"
           flexGrow={1}
         >
-          <Box mr={5} pt={2}>
+          <Box ml={{ md: 8 }}>
             <NextLink href="/">
               <a>
                 <Image src={NextLogo} alt="logo next" width={300} height={64} />
               </a>
             </NextLink>
           </Box>
-          <Box mr={5} pt={2}>
+          <Box mr={5}>
             <NextLink href="tel:0805037555">
               <a>
                 <Image
@@ -80,6 +74,7 @@ export const Navbar = () => {
           flexGrow={1}
           mt={{ base: 4, md: 4 }}
           spacing={{ md: 6 }}
+          ml={{ md: 12 }}
         >
           {navItems.map((navItem) => (
             <Box key={navItem.label}>
@@ -104,7 +99,8 @@ export const Navbar = () => {
                     boxShadow={"xl"}
                     p={4}
                     rounded={"xl"}
-                    minW={"sm"}
+                    minW={"2xs"}
+                    width={"2xs"}
                   >
                     <Stack>
                       {navItem.children.map((child) => (
@@ -153,50 +149,7 @@ export const Navbar = () => {
   );
 };
 export default Navbar;
-const DesktopNav = () => {
-  return (
-    <Stack direction={"row"} spacing={4}>
-      {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label}>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
-            <PopoverTrigger>
-              <Link
-                p={2}
-                href={navItem.href ?? "#"}
-                fontSize={"sm"}
-                fontWeight={500}
-                color="next"
-                _hover={{
-                  textDecoration: "none",
-                  color: "gray.800",
-                }}
-              >
-                {navItem.label}
-              </Link>
-            </PopoverTrigger>
 
-            {navItem.children && (
-              <PopoverContent
-                border={0}
-                boxShadow={"xl"}
-                bg="white"
-                p={4}
-                rounded={"xl"}
-                minW={"sm"}
-              >
-                <Stack>
-                  {navItem.children.map((child) => (
-                    <DesktopSubNav key={child.label} {...child} />
-                  ))}
-                </Stack>
-              </PopoverContent>
-            )}
-          </Popover>
-        </Box>
-      ))}
-    </Stack>
-  );
-};
 const DesktopSubNav = ({ label, href }) => {
   return (
     <NextLink href={href} passHref>
@@ -217,17 +170,6 @@ const DesktopSubNav = ({ label, href }) => {
               {label}
             </Text>
           </Box>
-          <Flex
-            transition={"all .3s ease"}
-            transform={"translateX(-10px)"}
-            opacity={0}
-            _groupHover={{ opacity: "100%", transform: "translateX(0)" }}
-            justify={"flex-end"}
-            align={"center"}
-            flex={1}
-          >
-            <Icon color={"gray.800"} w={5} h={5} as={ChevronRightIcon} />
-          </Flex>
         </Stack>
       </Link>
     </NextLink>
@@ -242,45 +184,7 @@ const MobileNav = () => {
     </Stack>
   );
 };
-// const MobileNavItem = ({ label, children, href }) => {
-//   const { isOpen, onToggle } = useDisclosure();
-//   return (
-//     <Stack spacing={4} onClick={children && onToggle}>
-//       <Flex py={2} as={Box} justify={"space-between"} align={"center"}>
-//         <MenuList>
-//           <NextLink href={href} passHref>
-//             <MenuItem>{label}</MenuItem>
-//           </NextLink>
-//         </MenuList>
-//         {children && (
-//           <Icon
-//             as={ChevronDownIcon}
-//             transform={isOpen ? "rotate(180deg)" : ""}
-//             w={6}
-//             h={6}
-//           />
-//         )}
-//       </Flex>
-//       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
-//         <Stack
-//           mt={2}
-//           pl={4}
-//           borderLeft={1}
-//           borderStyle={"solid"}
-//           borderColor={useColorModeValue("gray.200", "gray.700")}
-//           align={"start"}
-//         >
-//           {children &&
-//             children.map((child) => (
-//               <NextLink key={child.label} py={2} href={child.href} passHref>
-//                 {child.label}
-//               </NextLink>
-//             ))}
-//         </Stack>
-//       </Collapse>
-//     </Stack>
-//   );
-// };
+
 const MobileNavItem = ({ label, children, href }) => {
   const { isOpen, onToggle } = useDisclosure();
 
