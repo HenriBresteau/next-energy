@@ -158,13 +158,13 @@ const DesktopSubNav = ({ label, href }) => {
         display={"block"}
         p={2}
         rounded={"md"}
-        _hover={{ bg: "#1AB10750" }}
+        _hover={{ bg: "#61727bcf" }}
       >
         <Stack direction={"row"} align={"center"}>
           <Box>
             <Text
               transition={"all .3s ease"}
-              _groupHover={{ color: "gray.800" }}
+              _groupHover={{ color: "white" }}
               fontWeight={500}
             >
               {label}
