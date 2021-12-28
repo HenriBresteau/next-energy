@@ -64,7 +64,8 @@ export const Form = () => {
                 <InputLeftElement
                   pointerEvents="none"
                   // eslint-disable-next-line react/no-children-prop
-                  children={<IoPersonCircleOutline color="gray.800" />}
+                  children={<IoPersonCircleOutline color="#0b0e3F" />}
+                  zIndex={0}
                 />
                 <Input
                   type="text"
@@ -83,7 +84,8 @@ export const Form = () => {
                 <InputLeftElement
                   pointerEvents="none"
                   // eslint-disable-next-line react/no-children-prop
-                  children={<IoCall color="gray.800" />}
+                  children={<IoCall color="#0b0e3F" />}
+                  zIndex={0}
                 />
                 <Input
                   type="tel"
@@ -102,7 +104,8 @@ export const Form = () => {
                 <InputLeftElement
                   pointerEvents="none"
                   // eslint-disable-next-line react/no-children-prop
-                  children={<IoMailOutline color="gray.800" />}
+                  children={<IoMailOutline color="#0b0e3F" />}
+                  zIndex={0}
                 />
                 <Input
                   type="email"
