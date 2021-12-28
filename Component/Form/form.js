@@ -9,6 +9,7 @@ import {
   Heading,
   Button,
   Divider,
+  Grid,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { IoMailOutline, IoPersonCircleOutline, IoCall } from "react-icons/io5";
@@ -48,7 +49,15 @@ export const Form = () => {
           Vous souhaitez être contacté ?
         </Heading>
         <Box m={4} color="#0b0e3F">
-          <VStack spacing={4} as="form" method="POST" onSubmit={submitContact}>
+          <Grid
+            gridTemplateColumns={{ base: "1fr", md: "repeat(4, 1fr)" }}
+            alignItems={{ md: "end" }}
+            gap={6}
+            spacing={4}
+            as="form"
+            method="POST"
+            onSubmit={submitContact}
+          >
             <FormControl>
               <FormLabel>Votre nom</FormLabel>
               <InputGroup borderColor="#74bd4c">
@@ -118,7 +127,7 @@ export const Form = () => {
                 Envoyer
               </Button>
             </FormControl>
-          </VStack>
+          </Grid>
         </Box>
       </Box>
     </>
