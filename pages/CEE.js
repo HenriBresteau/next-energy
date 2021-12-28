@@ -62,8 +62,16 @@ export default function CEE() {
               <Heading as="h3" pb={4} variant="section-sub">
                 Une procédure en 4 étapes :
               </Heading>
-              <HStack pb={{ base: 6, md: 0 }}>
-                <Text fontSize={48} color="#61727B85" fontWeight="800">
+              <HStack
+                pb={{ base: 6, md: 0 }}
+                alignItems={{ base: "baseline", md: "center" }}
+              >
+                <Text
+                  fontSize={48}
+                  color="#61727B85"
+                  fontWeight="800"
+                  fontFamily="Helvetica Heavy"
+                >
                   1
                 </Text>
                 <Text>
@@ -73,8 +81,16 @@ export default function CEE() {
                   enseignes de distribution (Auchan, Leclerc…))
                 </Text>
               </HStack>
-              <HStack pb={{ base: 6, md: 0 }}>
-                <Text fontSize={48} color="#61727B85" fontWeight="800">
+              <HStack
+                pb={{ base: 6, md: 0 }}
+                alignItems={{ base: "baseline", md: "center" }}
+              >
+                <Text
+                  fontSize={48}
+                  color="#61727B85"
+                  fontWeight="800"
+                  fontFamily="Helvetica Heavy"
+                >
                   2
                 </Text>
                 <Text>
@@ -85,8 +101,16 @@ export default function CEE() {
                   Garant de l’Environnement (RGE).
                 </Text>
               </HStack>
-              <HStack pb={{ base: 6, md: 0 }}>
-                <Text fontSize={48} color="#61727B85" fontWeight="800">
+              <HStack
+                pb={{ base: 6, md: 0 }}
+                alignItems={{ base: "baseline", md: "center" }}
+              >
+                <Text
+                  fontSize={48}
+                  color="#61727B85"
+                  fontWeight="800"
+                  fontFamily="Helvetica Heavy"
+                >
                   3
                 </Text>
                 <Text>
@@ -95,8 +119,16 @@ export default function CEE() {
                   d’isolation intérieure et extérieure.
                 </Text>
               </HStack>
-              <HStack pb={{ base: 6, md: 0 }}>
-                <Text fontSize={48} color="#61727B85" fontWeight="800">
+              <HStack
+                pb={{ base: 6, md: 0 }}
+                alignItems={{ base: "baseline", md: "center" }}
+              >
+                <Text
+                  fontSize={48}
+                  color="#61727B85"
+                  fontWeight="800"
+                  fontFamily="Helvetica Heavy"
+                >
                   4
                 </Text>
                 <Text>
