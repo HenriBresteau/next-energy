@@ -20,7 +20,7 @@ export const Footer = () => {
                 src={logoNext}
                 alt="logo Next Energy"
                 width={150}
-                height={30}
+                height={25}
               ></Image>
             </Box>
             <Text className={styles.credits}>
