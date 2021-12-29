@@ -60,7 +60,7 @@ export const Form = () => {
           >
             <FormControl>
               <FormLabel>Votre nom</FormLabel>
-              <InputGroup borderColor="#74bd4c">
+              <InputGroup borderColor="#1AB107">
                 <InputLeftElement
                   pointerEvents="none"
                   // eslint-disable-next-line react/no-children-prop
@@ -72,7 +72,7 @@ export const Form = () => {
                   placeholder="Dupont"
                   size="md"
                   id="name"
-                  focusBorderColor="#74bd4c"
+                  focusBorderColor="#1AB107"
                   onChange={(e) => setName(e.target.value)}
                   isRequired
                 />
@@ -80,7 +80,7 @@ export const Form = () => {
             </FormControl>
             <FormControl>
               <FormLabel>Votre téléphone</FormLabel>
-              <InputGroup borderColor="#74bd4c">
+              <InputGroup borderColor="#1AB107">
                 <InputLeftElement
                   pointerEvents="none"
                   // eslint-disable-next-line react/no-children-prop
@@ -92,7 +92,7 @@ export const Form = () => {
                   placeholder="04 00 00 00 00"
                   size="md"
                   id="tel"
-                  focusBorderColor="#74bd4c"
+                  focusBorderColor="#1AB107"
                   onChange={(e) => setTel(e.target.value)}
                   isRequired
                 />
@@ -100,7 +100,7 @@ export const Form = () => {
             </FormControl>
             <FormControl>
               <FormLabel>Votre email</FormLabel>
-              <InputGroup borderColor="#74bd4c">
+              <InputGroup borderColor="#1AB107">
                 <InputLeftElement
                   pointerEvents="none"
                   // eslint-disable-next-line react/no-children-prop
@@ -112,7 +112,7 @@ export const Form = () => {
                   placeholder="dupont@mail.com"
                   size="md"
                   id="email"
-                  focusBorderColor="#74bd4c"
+                  focusBorderColor="#1AB107"
                   onChange={(e) => setEmail(e.target.value)}
                   isRequired
                 />
@@ -123,9 +123,9 @@ export const Form = () => {
                 type="submit"
                 variant="outline"
                 width="100%"
-                bg="#74bd4c"
+                bg="#1AB107"
                 color="white"
-                _hover={{ bg: "transparent", color: "#74bd4c" }}
+                _hover={{ bg: "transparent", color: "#1AB107" }}
               >
                 Envoyer
               </Button>
