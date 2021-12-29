@@ -9,8 +9,8 @@ import {
 } from "@chakra-ui/react";
 import Layout from "../../Component/Layouts/articles";
 import Image from "next/image";
-import depenses from "../../public/images/vous-etes/reduisez-vos-depenses.png";
-import travaux from "../../public/images/vous-etes/travaux-finances.png";
+import depenses from "../../public/images/vous-etes/BS-Reduisez.png";
+import travaux from "../../public/images/vous-etes/BS-travaux-finances.png";
 
 const VousEtes = () => (
   <Layout title="Bailleurs Sociaux">
@@ -24,10 +24,10 @@ const VousEtes = () => (
       <Stack
         direction={{ base: "column", md: "row" }}
         display="flex"
-        alignItems="center"
+        alignItems="flex-start"
         mt={{ md: "2rem" }}
       >
-        <Box flex="0.8" maxW={{ md: "600px" }} mr={{ md: "50px" }}>
+        <Box maxW={{ md: "500px" }} mr={{ md: "50px" }}>
           <Heading as="h3" pb={4} variant="section-sub-gris">
             Réduisez vos dépenses énergétiques
           </Heading>
@@ -41,7 +41,7 @@ const VousEtes = () => (
             réduire et les consommations inutiles !
           </Text>
         </Box>
-        <Box flex="0.4" mx={{ md: "120px !important" }}>
+        <Box>
           <Image src={depenses} alt="Réduisez vos dépenses énergétiques" />
         </Box>
       </Stack>
@@ -51,18 +51,23 @@ const VousEtes = () => (
         alignItems="center"
         mt={{ md: "2rem" }}
       >
-        <Box flex="0.3" mx={{ md: "120px !important" }}>
+        <Box mr={{ md: "50px" }}>
           <Image
             src={travaux}
             alt="Vos travaux financés jusqu’à 100 % grâce aux CEE"
           />
         </Box>
-        <Box flex="0.8" maxW={{ md: "600px" }} mr={{ md: "50px" }}>
+        <Box
+          maxW={{ md: "750px" }}
+          border="14px solid #1AB107"
+          p={12}
+          textAlign="center"
+        >
           <Heading as="h3" pb={4} variant="section-sub-gris">
             Vos travaux financés jusqu’à 100 % grâce aux certificats d’économies
             d’énergie (CEE)
           </Heading>
-          <Text>
+          <Text px={8}>
             Le dispositif des CEE (Certificats d’Économies d’Énergie) a été mis
             en place par le gouvernement pour favoriser les travaux liés à la
             rénovation énergétique. <br />
@@ -77,35 +82,34 @@ const VousEtes = () => (
         <Heading as="h3" pb={4} variant="section-sub-gris">
           Générez de réelles économies et valorisez votre parc
         </Heading>
-        <Text pb={4}>
-          Les travaux d’efficacité énergétique :
-          <UnorderedList color={"next"} fontWeight="600" pb={6}>
-            <ListItem>
-              Le calorifugeage des réseaux d’eau chaude sanitaire et de
-              chauffage =&gt; jusqu’à 25 % d’économies.
-            </ListItem>
-            <ListItem>
-              L’isolation des combles et des planchers-bas =&gt;jusqu’à 30 %
-              d’économies.
-            </ListItem>
-            <ListItem>
-              L’isolation des planchers-bas =&gt; jusqu’à 10 % d’économies.
-            </ListItem>
-            <ListItem>
-              L’isolation des points singuliers de vos canalisations Vous
-              permettent de générer des baisses de charges, d’améliorer le
-              confort des habitants et de valoriser votre patrimoine immobilier.
-            </ListItem>
-          </UnorderedList>
-        </Text>
+        <Text pb={4}>Les travaux d’efficacité énergétique :</Text>
+        <UnorderedList color={"next"} pb={6} fontSize={18}>
+          <ListItem>
+            Le calorifugeage des réseaux d’eau chaude sanitaire et de chauffage
+            =&gt; jusqu’à 25 % d’économies.
+          </ListItem>
+          <ListItem>
+            L’isolation des combles et des planchers-bas =&gt;jusqu’à 30 %
+            d’économies.
+          </ListItem>
+          <ListItem>
+            L’isolation des planchers-bas =&gt; jusqu’à 10 % d’économies.
+          </ListItem>
+          <ListItem>
+            L’isolation des points singuliers de vos canalisations.
+          </ListItem>
+        </UnorderedList>
+
         <Text pb={6}>
-          Les offices publics de l’habitat (OPH), les sociétés anonymes
+          Vous permettent de générer des baisses de charges, d’améliorer le
+          confort des habitants et de valoriser votre patrimoine immobilier. Les
+          offices publics de l’habitat (OPH), les sociétés anonymes
           d’habitations à loyers modérés ou HLM (SA d’HLM), les sociétés
           coopératives d’HLM, les sociétés d’économie mixte (SEM) et les
           entreprises sociales pour l’habitat (ESH) sont éligibles au dispositif
           CEE.
         </Text>
-        <Text color={"next"} fontWeight="600" pb={6}>
+        <Text color={"#1AB107"} pb={6}>
           NEXT ENERGY met à votre disposition toutes ses compétences pour la
           mise en œuvre des solutions les plus performantes pour vous aider à
           maîtriser votre consommation énergétique et valoriser votre patrimoine
