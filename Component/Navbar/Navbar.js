@@ -246,20 +246,24 @@ const navItems = [
     href: "/vous-etes",
     children: [
       {
+        label: "Bailleurs Sociaux",
+        href: "/vous-etes/bailleurs-sociaux",
+      },
+      {
         label: "Collectivité",
         href: "/vous-etes/collectivite",
+      },
+      {
+        label: "Copropriete",
+        href: "/vous-etes/copropriete",
       },
       {
         label: "Entreprise",
         href: "/vous-etes/entreprise",
       },
       {
-        label: "Industrie",
-        href: "/vous-etes/industrie",
-      },
-      {
-        label: "Bailleurs Sociaux",
-        href: "/vous-etes/bailleurs-sociaux",
+        label: "Organisme de santé",
+        href: "/vous-etes/organisme-sante",
       },
     ],
   },
