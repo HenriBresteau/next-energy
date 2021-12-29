@@ -15,12 +15,6 @@ import travaux from "../../public/images/vous-etes/BS-travaux-finances.png";
 const VousEtes = () => (
   <Layout title="Bailleurs Sociaux">
     <Container maxW="container.xl">
-      <Box>
-        <Heading as="h2" variant="section-title">
-          BAILLEURS SOCIAUX
-        </Heading>
-      </Box>
-
       <Stack
         direction={{ base: "column", md: "row" }}
         display="flex"
@@ -28,6 +22,11 @@ const VousEtes = () => (
         mt={{ md: "2rem" }}
       >
         <Box maxW={{ md: "500px" }} mr={{ md: "50px" }}>
+          <Box>
+            <Heading as="h2" variant="section-title">
+              BAILLEURS SOCIAUX
+            </Heading>
+          </Box>
           <Heading as="h3" pb={4} variant="section-sub-gris">
             Réduisez vos dépenses énergétiques
           </Heading>
@@ -48,8 +47,9 @@ const VousEtes = () => (
       <Stack
         direction={{ base: "column", md: "row" }}
         display="flex"
-        alignItems="center"
+        alignItems="flex-start"
         mt={{ md: "2rem" }}
+        mb={{ md: "2rem" }}
       >
         <Box mr={{ md: "50px" }}>
           <Image
@@ -58,12 +58,13 @@ const VousEtes = () => (
           />
         </Box>
         <Box
-          maxW={{ md: "750px" }}
+          maxW={{ md: "700px" }}
           border="14px solid #1AB107"
-          p={12}
+          py={16}
+          px={12}
           textAlign="center"
         >
-          <Heading as="h3" pb={4} variant="section-sub-gris">
+          <Heading as="h3" pb={4} variant="section-sub-gris" px={6}>
             Vos travaux financés jusqu’à 100 % grâce aux certificats d’économies
             d’énergie (CEE)
           </Heading>
