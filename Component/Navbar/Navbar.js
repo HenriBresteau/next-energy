@@ -72,7 +72,7 @@ export const Navbar = () => {
           width={{ base: "full", md: "100%" }}
           alignItems="center"
           flexGrow={1}
-          mt={{ base: 4, md: 4 }}
+          my={{ base: 4, md: 4 }}
           spacing={{ md: 6 }}
           ml={{ md: 12 }}
         >
@@ -126,7 +126,7 @@ export const Navbar = () => {
             </Box>
           ))}
         </Stack>
-
+        <Divider />            
         <Flex
           flex={{ base: 1, md: "auto" }}
           ml={{ base: -2 }}
