@@ -23,7 +23,7 @@ export default function Main({ children, router }) {
       <Container
         className={styles.main}
         pt={{ base: "220px", md: "160px" }}
-        pb={8}
+        pb={16}
         maxW="container.xl"
       >
         {children}
