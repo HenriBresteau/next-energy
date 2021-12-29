@@ -1,11 +1,14 @@
-import { Container, Heading } from "@chakra-ui/react";
+import { Container, Heading, Box } from "@chakra-ui/react";
 import Layout from "../../Component/Layouts/articles";
-import { TitleVE } from "../../Component/Vous-etes/vous-etes";
 
 const VousEtes = () => (
   <Layout title="Collectivité">
     <Container maxW="container.xl">
-      <TitleVE>Collectivité</TitleVE>
+      <Box>
+        <Heading as="h2" variant="section-title">
+          Collectivité - Administration
+        </Heading>
+      </Box>
     </Container>
   </Layout>
 );

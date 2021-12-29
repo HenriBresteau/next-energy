@@ -1,12 +1,12 @@
-import { Container, Heading , Box} from "@chakra-ui/react";
+import { Container, Heading, Box } from "@chakra-ui/react";
 import Layout from "../../Component/Layouts/articles";
 
 const VousEtes = () => (
-  <Layout title="Entreprise">
+  <Layout title="Organisme de santé">
     <Container maxW="container.xl">
       <Box>
         <Heading as="h2" variant="section-title">
-          Entreprise
+          Organisme de santé
         </Heading>
       </Box>
     </Container>
