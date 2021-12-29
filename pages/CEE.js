@@ -2,7 +2,7 @@ import { Box, Text, Container, Heading, Stack, HStack } from "@chakra-ui/react";
 import Image from "next/image";
 import Layout from "../Component/Layouts/articles";
 import { SpanCee, SpanCeeTitle } from "../Component/Vous-etes/cee";
-import Pollueur from "../public/images/CEE/Pollueur.png";
+import Pollueur from "../public/images/CEE/CEE-comment.png";
 
 export default function CEE() {
   return (
@@ -17,11 +17,11 @@ export default function CEE() {
           <Stack
             direction={{ base: "column", md: "row" }}
             display="flex"
-            alignItems="center"
+            alignItems="flex-start"
             mt={{ md: "2rem" }}
           >
-            <Box flex="0.8" maxW={{ md: "600px" }} mr={{ md: "50px" }}>
-              <Heading as="h3" pb={4} variant="section-sub">
+            <Box maxW={{ md: "600px" }} mr={{ md: "50px" }}>
+              <Heading as="h3" pb={4} variant="section-sub" mt="0">
                 Qu’est-ce que c’est ?
               </Heading>
               <Text pb={4}>
@@ -32,7 +32,7 @@ export default function CEE() {
                 financièrement les usagers (particuliers ou entreprises) dans
                 leurs démarches d’économies d’énergies.
               </Text>
-              <Text pb={4}>
+              <Text pb={12}>
                 Grâce à ces <SpanCee>CEE</SpanCee>, les frais de vos travaux de
                 rénovation énergétique seront partiellement ou intégralement
                 remboursés. À noter que les <SpanCee>CEE</SpanCee> peuvent être
@@ -50,7 +50,7 @@ export default function CEE() {
               </Text>
             </Box>
 
-            <Box flex="0.4" mx={{ md: "120px !important" }}>
+            <Box mx={{ md: "60px !important" }}>
               <Image
                 src={Pollueur}
                 alt="Les Certificats d'économies d'énergies - les pollueurs"
@@ -58,7 +58,7 @@ export default function CEE() {
             </Box>
           </Stack>
           <Stack>
-            <Box flex="0.8">
+            <Box>
               <Heading as="h3" pb={4} variant="section-sub">
                 Une procédure en 4 étapes :
               </Heading>
