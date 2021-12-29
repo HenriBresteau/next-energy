@@ -89,7 +89,7 @@ export const Form = () => {
                 />
                 <Input
                   type="tel"
-                  placeholder="04 00 00 00 00"
+                  placeholder="00 00 00 00 00"
                   size="md"
                   id="tel"
                   focusBorderColor="#1AB107"
