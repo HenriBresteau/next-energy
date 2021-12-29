@@ -44,7 +44,7 @@ export const Form = () => {
   };
   return (
     <>
-      <Box p={4}>
+      <Box py={4}>
         <Heading as="h3" mx="4" fontSize="20" color="#0b0e3F">
           Vous souhaitez être contacté ?
         </Heading>
